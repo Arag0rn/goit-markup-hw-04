@@ -40,7 +40,7 @@ body {
 /* ------section header------ */
 
 header {
-    padding: 24px;
+    padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
 
 }
@@ -144,7 +144,9 @@ span {
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat:no-repeat;
+    background-size: cover;
     margin: 0 auto;
+    height: 600px;
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -205,8 +207,11 @@ span {
 
 .advantages-backgr {
     background-color: var(--cloud);
-    border-radius: 3%;
-    padding: 24px 100px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
 }
 
 .advantages-icon {
@@ -315,9 +320,8 @@ span {
 }
 .cocial{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-top: 8px;
     width: 40px;
     height: 40px;
     background-color:var(--button-color);
@@ -336,11 +340,14 @@ span {
     background-color: var(--dark);
     padding: 100px 0;
 }
+.cocial:hover, .cocial:hover{
+    background-color:#404BBF;
+}
 
 /* ------section customers----- */
 
 .customers {
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 .customers-head {
@@ -363,20 +370,22 @@ span {
 
 .customers-bacgr {
     display: flex;
-    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
     width: 168px;
     height: 88px;
-    border: 1px solid #8E8F99;
+    border: 1px solid currentColor;
+    color:#8E8F99;
     border-radius: 5px;
 }
 
 .customers-icon {
     width: 104px;
     height: 56px;
-    fill: #8e8f99;
+    fill: currentColor;
 }
-.customers-bacgr:hover, .customers-bacgr:focus{
-    border: 1px solid #404BBF;
+.customers-bacgr:hover {
+    color: #404BBF;
 }
  .customers-icon:hover, .customers-icon:focus{
     fill: #404BBF;
@@ -389,6 +398,9 @@ span {
 }
 .footer-span {
     color: #f4f4fd;
+}
+.footer-block {
+    width: 264px;
 }
 
 .footer_list {
@@ -423,8 +435,8 @@ span {
     background: #31D0AA;
 }
 .footer_social-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 .social-block-txt {
     font-weight: 500;
